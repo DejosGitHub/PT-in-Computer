@@ -1,0 +1,132 @@
+<html>
+<head> 
+	<style>
+
+*{
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+.nav ul{ 
+	list-style-type: none;
+}	
+.nav ul li{
+float:left;
+width:100px; 
+text-align:center; 
+margin-left:5px;
+}
+.nav ul li ul li{
+ margin-left: 0px;
+}
+.nav ul ul{ 
+display:none;
+}
+.nav ul li:hover > ul{
+display:block;
+}
+.nav ul li:hover{
+ background: #0078b0;
+ color: #0078b0; 
+ font-weight:bold;
+}
+.nav ul li ul li:hover{
+ background: #00aeff; 
+ color: #00aeff;
+ border-radius: 5px;
+}
+.container {
+  display: grid;
+  height: 300px;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.4fr 1fr 0.4fr;
+  grid-template-areas:  
+  "Header Header Header"
+  "S1 Main S2"
+  "Footer Footer Footer"
+
+}
+
+.header {
+  border-radius: 5px;
+    Background-color: #00aeff;
+    grid-area: Header;
+	align: center;
+}
+
+.content-1 {
+  border-radius: 0px;
+    Background-color: #0078b0;
+    grid-area: S1;
+}
+
+.content-2 {
+  border-radius: 0px;
+    background-color: #0078b0;
+    grid-area: Main;
+}
+
+.content-3 {
+  border-radius: 0px;
+    background-color: #0078b0;
+    grid-area: S2;
+}
+
+.footer {
+  border-radius: 0px;
+    background-color: #0078b0;
+    grid-area: Footer;
+}
+
+@media screen and (max-width: 600px) {
+
+.container {
+  display: grid; 
+  grid-template-columns: 2.2fr; 
+  grid-template-rows: 0.4fr 0.7fr 1fr 0.7fr 0.4fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Header"
+    "S1"
+    "Main"
+    "S2"
+    "Footer"; 
+}
+
+</style>
+
+<title>PT4_DEJOS</title>
+  </head>
+   <body> 
+<font color=#bde8fc face=algerian>
+   <div class="container">
+<div align="center" class="header">
+  <div class=nav>
+<ul>
+           <li align=center><a style="font-weight:bold" href=index.html>HOME</a></li>
+           <li align=center><a style="font-weight:bold" href=aboutme.html>ABOUT ME</a></li> 
+		   <li align=center><a style="font-weight:bold" href=hobbies.html>HOBBIES</a></li> 
+           <li align=center><a style="font-weight:bold" href=games.html>FAVORITE GAMES</a></li>
+           <li align=center><a style="font-weight:bold" href=shows.html>FAVORITE SHOWS</a></li>  		   
+       </ul> 
+   </div> 
+</div> 
+<div align="center" class="content-1">
+<h2> The Forest: </h2>
+<h1> The Forest is a survival horror video game developed and published by Endnight Games. You are stuck in a remote island where you survive and find your son.</h1>
+</div>
+<div align="center" class="content-2">
+<h2> Phasmophobia: </h2>
+<h1> Phasmophobia is an investigative horror game developed and published by British indie game studio, Kinetic Games. You and your friends investigate and guess the ghost with many paranormal activities. </h1>
+</div>
+<div align="center" class="content-3">
+<h2> Counter Strike:</h2>
+<h1> Counter-Strike is a series of multiplayer first-person shooter video games in which teams of terrorists battle to perpetrate an act of terror while counter-terrorists try to prevent it. </h1>
+</div>
+<div align="center" class="footer">
+<h2> Roblox: </h2>
+<h1> Roblox is an online game platform and game creation system developed by Roblox Corporation. Fun to play with your friends and experience many numerous games to play. </h1>
+</div>
+</div>
+</body> 
+</html>

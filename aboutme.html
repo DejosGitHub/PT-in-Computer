@@ -1,0 +1,132 @@
+<html>
+<head> 
+	<style>
+
+*{
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+.nav ul{ 
+	list-style-type: none;
+}	
+.nav ul li{
+float:left;
+width:100px; 
+text-align:center; 
+margin-left:5px;
+}
+.nav ul li ul li{
+ margin-left: 0px;
+}
+.nav ul ul{ 
+display:none;
+}
+.nav ul li:hover > ul{
+display:block;
+}
+.nav ul li:hover{
+ background: #0078b0;
+ color: #0078b0; 
+ font-weight:bold;
+}
+.nav ul li ul li:hover{
+ background: #00aeff; 
+ color: #00aeff;
+ border-radius: 5px;
+}
+.container {
+  display: grid;
+  height: 300px;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.4fr 1fr 0.4fr;
+  grid-template-areas:  
+  "Header Header Header"
+  "S1 Main S2"
+  "Footer Footer Footer"
+
+}
+
+.header {
+  border-radius: 5px;
+    Background-color: #00aeff;
+    grid-area: Header;
+	align: center;
+}
+
+.content-1 {
+  border-radius: 0px;
+    Background-color: #0078b0;
+    grid-area: S1;
+}
+
+.content-2 {
+  border-radius: 0px;
+    background-color: #0078b0;
+    grid-area: Main;
+}
+
+.content-3 {
+  border-radius: 0px;
+    background-color: #0078b0;
+    grid-area: S2;
+}
+
+.footer {
+  border-radius: 0px;
+    background-color: #0078b0;
+    grid-area: Footer;
+}
+
+@media screen and (max-width: 600px) {
+
+.container {
+  display: grid; 
+  grid-template-columns: 2.2fr; 
+  grid-template-rows: 0.4fr 0.7fr 1fr 0.7fr 0.4fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Header"
+    "S1"
+    "Main"
+    "S2"
+    "Footer"; 
+}
+
+</style>
+
+<title>PT4_DEJOS</title>
+  </head>
+   <body> 
+<font color=#bde8fc face=algerian>
+   <div class="container">
+<div align="center" class="header">
+  <div class=nav>
+<ul>
+           <li align=center><a style="font-weight:bold" href=index.html>HOME</a></li>
+           <li align=center><a style="font-weight:bold" href=aboutme.html>ABOUT ME</a></li> 
+		   <li align=center><a style="font-weight:bold" href=hobbies.html>HOBBIES</a></li> 
+           <li align=center><a style="font-weight:bold" href=games.html>FAVORITE GAMES</a></li>
+           <li align=center><a style="font-weight:bold" href=shows.html>FAVORITE SHOWS</a></li>  			   
+       </ul> 
+   </div> 
+</div> 
+<div align="center" class="content-1">
+<h2> Birthday: </h2>
+<h1> March 29, 2007 </h1>
+</div>
+<div align="center" class="content-2">
+<h2> Dreams / Ambitions in Life: </h2>
+<h1> I didn't choose on what career I choose but I want to learn culinary arts. </h1>
+</div>
+<div align="center" class="content-3">
+<h2> Age & Gender:</h2>
+<h1> I am a 15 Year Old Male </h1>
+</div>
+<div align="center" class="footer">
+<h2> Name: </h2>
+<h1> Lourd Andrei Dejos </h1>
+</div>
+</div>
+</body> 
+</html>
